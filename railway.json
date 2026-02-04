@@ -4,7 +4,7 @@
         "builder": "NIXPACKS"
     },
     "deploy": {
-        "startCommand": "npx ts-node server/server.ts",
+        "startCommand": "cp package.backend.json package.json && npm install && npx ts-node server/server.ts",
         "restartPolicyType": "ON_FAILURE",
         "restartPolicyMaxRetries": 10
     }
