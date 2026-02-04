@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ['nodejs_20']
+
+[phases.install]
+cmds = ['npm install --production=false express socket.io cors @types/express @types/node typescript ts-node']
+
+[start]
+cmd = 'npx ts-node server/server.ts'
